@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+  <!--  -->
+  <html lang = "en">
+    <head> 
+      <title> Submit an Issue </title>	
+      <meta charset = "utf-8" />
+	<script type = "text/javascript" src = "IssueForm.js" >
+    </script>
+    </head>
+    <body>
+<h2>Submit an Issue</h2><br>
+<form action = "">
+<label> First Name: <input type = "text" id = "firstName" maxlength = "20" size = "15"/>
+</label>
+
+<label> Last Name: <input type = "text" id = "lastName" maxlength = "20" size = "15"/>
+</label> <br> <br>
+
+<label> Email Address: <input type = "text" id = "emailAddress" maxlength = "30" size = "25"/>
+</label> <br> <br>
+
+<label> Telephone Number: (<input type = "text" id = "telephoneNumberFirst3" maxlength = "3" size = "2"/>)-<input type = "text" id = "telephoneNumberMiddle3" maxlength = "3" size = "2"/>-<input type = "text" id = "telephoneNumberLast4" maxlength = "4" size = "3"/>
+</label> <br> <br>
+
+<label>Please describe your issue here<label> <br>
+<textarea rows="5" cols="50">
+</textarea>
+
+<p>
+	<input type = "submit" value = "Submit" id ="submitted" onclick = "return chkForm();"/>
+	<input type = "reset" value = "Clear" />
+</p>
+</form>
+<script type = "text/javascript">
+      <!--
+        document.getElementById("submitted").onclick = chkForm;
+	// -->	
+</script>
+
+    </body>
+  </html>
